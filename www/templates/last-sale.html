@@ -1,0 +1,78 @@
+<ion-header-bar align-title="center;">
+    <h1 class="title">Datos Ventas</h1> 
+    <div></div>
+    <div class="buttons">
+    <button ng-click="back()" class=" button-clear button-dark" ng-click = hideModal()><i class="icon ion-ios-skipbackward"></i></button>
+    </div>
+</ion-header-bar>
+
+  <ion-content class="padding precio">
+  <h1>Ultima venta</h1>
+<table>
+     <thead>
+        <tr>
+          <th>Host</th>
+          <th>precio Venta</th>
+          <th>Volumen Venta</th>
+        </tr>
+     </thead> 
+
+    <tr >
+      <td>1</td>
+      <td> {{ultimaVenta.price1}}</td>
+      <td>{{ultimaVenta.volume1 }}</td>
+    </tr>
+    <tr >
+      <td>2</td>
+      <td> {{ultimaVenta.price2}}</td>
+      <td>{{ultimaVenta.volume2}}</td>
+    </tr>
+    <tr >
+      <td>3</td>
+      <td> {{ultimaVenta.price3}}</td>
+      <td>{{ultimaVenta.volume3}}</td>
+    </tr>
+    <tr >
+      <td>4</td>
+      <td> {{ultimaVenta.price4}}</td>
+      <td>{{ultimaVenta.volume4}}</td>
+    </tr>
+  </table>
+<br><br><br>
+<h1>Acumulado Dispensador</h1>
+  <table>
+     <thead>
+        <tr>
+          <th>Host</th>
+          <th>Precio Total</th>
+          <th>Volumen Total</th>
+        </tr>
+     </thead> 
+        <tr >
+          <td>1</td>
+          <td> {{ultimaVenta.acPrice1}}</td>
+          <td>{{ultimaVenta.acVol1}}</td>
+        </tr>
+        <tr >
+          <td>2</td>
+          <td> {{ultimaVenta.acPrice2}}</td>
+          <td>{{ultimaVenta.acVol2}}</td>
+        </tr>
+        <tr >
+          <td>3</td>
+          <td> {{ultimaVenta.acPrice3}}</td>
+          <td>{{ultimaVenta.acVol3}}</td>
+        </tr>
+        <tr >
+          <td>4</td>
+          <td> {{ultimaVenta.acPrice4}}</td>
+          <td>{{ultimaVenta.acVol4}}</td>
+        </tr>
+    
+  </table>
+
+     <!-- <button class="button icon-left ion-printer button-block button-positive" ng-click="HTTP_getAccumulateSale()" >GetAccumulate</button>-->
+
+  </ion-content>
+</ion-view>
+

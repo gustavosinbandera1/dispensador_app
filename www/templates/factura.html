@@ -1,0 +1,65 @@
+
+	<ion-header-bar align-title="center;">
+    <h1 class="title">Factura</h1> 
+    <div></div>
+    <div class="buttons">
+    <button ng-click="back()" class=" button-clear button-dark" ng-click = hideModal()><i class="icon ion-ios-skipbackward"></i></button>
+    </div>
+</ion-header-bar>
+
+	<ion-content class="padding">
+		
+  		<div class="list">
+			<label class="item item-input item-stacked-label">
+			    <span class="input-label">Nombre</span>
+			    <input type="text" placeholder="nombre de quien debe aparecer en el recibo" ng-model="data.nombre" required>
+			  </label>
+			  
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">NIT</span>
+			    <input type="text" placeholder="Nit o cedula de ciudadania" ng-model="data.nit">
+			  </label>
+			 
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Placa del Vehiculo</span>
+			    <input type="text" placeholder="Cedula de ciudadania" ng-model="data.placa">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Telefono</span>
+			    <input type="tel" placeholder="Telefono" ng-model="data.telefono">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Kilometraje</span>
+			    <input type="tel" placeholder="Kilometraje" ng-model="data.kilometraje">
+			  </label>
+
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      punto de venta
+			    </div>
+			    <select ng-model="data.puntoVenta" ng-change="showSelectValue(data.puntoVenta)" ng-init="1">
+			      <option >1</option>
+			      <option selected>2</option>
+			       <option>3</option>
+			      <option >4</option>
+			    </select>
+			  </label>		
+
+			   <label class="item item-input item-select">
+			    <div class="input-label">
+			      Numero de Copias
+			    </div>
+			    <select ng-model="data.numCopias" ng-change="showSelectValue(data.numCopias)">
+			      <option value="1">1</option>
+			      <option value="2" selected>2</option>
+			    </select>
+			  </label>		  
+	    </div>
+			
+			<button class="button icon-left ion-printer button-block button-positive" ng-click="HTTP_Print(data)" ng-disabled="dashData.printerBusy">Imprimir Factura</button>
+
+
+	</ion-content>
+<!--</ion-view>-->

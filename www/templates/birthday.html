@@ -1,0 +1,15 @@
+
+<ion-view view-title="Crear Cumpleaños" class="align-title=center" name="birthday-view" cache-view="false">
+  <!--<ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-plus" ng-click="vm.showAddBirthdayModal()"></button>
+    <button ng-click="back()" class="button icon-left ion-chevron-left button-clear button-dark" ng-click = back()></button>
+  </ion-nav-buttons>-->
+
+  <ion-content>        
+    <ion-list>
+      <ion-item ng-repeat="b in vm.birthdays" ng-click="vm.showEditBirthdayModal(b)">
+        <div style="float: left">{{ b.Name }}</div>
+        <div style="float: right">{{ b.Date | date:"dd MMMM yyyy" }}</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>

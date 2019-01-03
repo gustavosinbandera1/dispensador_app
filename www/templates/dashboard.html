@@ -1,0 +1,44 @@
+<!--<ion-view view-title="Dashboard" name="dashboard-view"   class="padding dash">
+--> 
+<div class="header">
+<ion-header-bar align-title="center;" >
+    <h1 class="title">{{username}}</h1> 
+    <div class="buttons">
+    <button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+    </div>
+</ion-header-bar>
+</div>
+
+
+	<!--<ion-nav-buttons side="right">
+		<button class="button icon-left ion-log-out button-stable" ng-click="logout()">Logout</button>
+	</ion-nav-buttons>-->
+
+	<ion-content class="dash has-header" >
+		<div class="row"><div class="col text-center">
+			<h3 class="dashTitle"><br> {{nombreEstacion}}</h3>
+			
+			<br><br>
+			<button class="button button-full button-assertive push_button" ng-click="crearFactura()" >
+				Imprimir Factura
+			</button>
+			<br>
+			<button class="button button-full button-assertive push_button" ng-click="getLastSale()">
+				Ultima venta
+			</button>
+			<br>
+			<!--<button class="button button-full button-assertive push_button" ng-click="vm.play('bass')">
+				configurar fecha y hora
+			</button>
+			<br>-->
+			<button class="button button-full button-assertive push_button" ng-click="hacerApertura()" ng-hide='dashData.isAuthorized'>
+				Realizar apertura.
+			</button>
+			<button class="button button-full button-assertive push_button1" ng-click="hacerCierre()" ng-show="dashData.isAuthorized">
+				Realizar cierre.
+			</button>
+			
+			{{response}}
+		</div></div>
+	</ion-view>
+</div>

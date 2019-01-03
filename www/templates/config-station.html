@@ -1,0 +1,56 @@
+<ion-header-bar align-title="center;">
+    <h1 class="title">Datos estacion</h1> 
+    <div></div>
+    <div class="buttons">
+    <button ng-click="back()" class=" button-clear button-dark" ng-click = hideModal()><i class="icon ion-ios-skipbackward"></i></button>
+    </div>
+</ion-header-bar>
+
+	<ion-content class="padding">
+		
+  		<div class="list">
+			<label class="item item-input item-stacked-label">
+			    <span class="input-label">Nombre Estacion</span>
+			    <input type="text" placeholder="nombre de la estacion de servicio" ng-model="vm.config.nameStation">
+			  </label>
+			  
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">NIT</span>
+			    <input type="number" placeholder="Nit o cedula de ciudadania" ng-model="vm.config.nitStation">
+			  </label>
+			 
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Direccion estacion</span>
+			    <input type="text" placeholder="Direccion de la estacion" ng-model="vm.config.dirStation">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Ciudad</span>
+			    <input type="text" placeholder="ciudad" ng-model="vm.config.ciudadStation">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Telefono</span>
+			    <input type="tel" placeholder="Telefono" ng-model="vm.config.telStation">
+			  </label> 
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Id equipo</span>
+			    <input type="text" placeholder="Id equipo" ng-model="vm.config.idStation">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Nombre Producto 1</span>
+			    <input type="text" placeholder="nombre del producto 1" ng-model="vm.config.nameProduct1">
+			  </label>
+
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label">Nombre Producto 2</span>
+			    <input type="text" placeholder="nombre del producto 2" ng-model="vm.config.nameProduct2">
+			  </label>
+	    </div>
+			
+			<button class="button icon-left ion-printer button-block button-positive" ng-click="HTTP_ConfigStation()" ng-disabled="vm.configIsBusy">Config Station</button>
+
+	</ion-content>
+</ion-view>

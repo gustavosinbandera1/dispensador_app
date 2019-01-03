@@ -1,0 +1,72 @@
+  <ion-modal-view cache-view="false">
+        <ion-header-bar align-title="center">
+          <h1 class="title">{{ action }} User</h1> 
+          <div class="buttons">
+          <button ng-hide="isAdd" ng-click="deleteUser()" class="button button-icon icon ion-trash-a"></button>
+          </div>
+          <div class="buttons">
+          <button  ng-click="hideModal1()" class="button button-icon icon ion-ios-skipbackward"></button>
+          </div>
+        </ion-header-bar>
+        <ion-content>
+            <div class="padding" cache-view="false">
+            <img class="full-image" cache-view="false" ng-src="{{user.profile || '//:0'}}">
+            <div class="padding"></div>
+            </div>
+
+            <label class="item item-input">
+             <input type="text" placeholder="Name" ng-model="user.Name">
+            </label>
+            <label class="item item-input">
+             <input type="text" placeholder="Apellido" ng-model="user.Apellido">
+            </label>
+            <label class="item item-input">
+              <input type="tel" placeholder="Telefono" ng-model="user.Telefono">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="user.Password">
+            </label>
+            <label class="item item-input">
+              <input type="password" ng-show="isAdd" placeholder="Password" ng-model="user.Password">
+            </label>
+             <label class="item item-input item-select">
+              <div class="input-label">
+               Privilegio
+              </div>
+              <select ng-model="user.role" ng-change="showSelectValue(user.role)" ng-init="1">
+              <option value="islero" selected>Islero</option>
+              <option value="administrador">Administrador</option>
+              <option value=""></option>
+              </select>
+             </label> 
+
+             
+         <!-- </div>-->
+          <div class="padding">
+             <button class="button button-block button-positive activated" ng-click="addMedia(user.Name)" ng-show='isAdd'>Take Photo!</button>
+            
+            <button ng-click="saveUser()" class="button button-block button-positive activated">Save</button>
+          </div>
+          <!--<div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>
+          <div class="padding"></div>-->
+          
+        </ion-content>
+  </ion-modal-view>
+
+
+
+

@@ -1,0 +1,39 @@
+
+<!--<ion-view view-title="Crear Usuario" class="align-title=center" name="usuario-view" cache-view="false" hide-nav-bar="false">-->
+  <!--<ion-nav-buttons side="right">
+    
+    <button class="button button-icon icon ion-plus" ng-click="vm.showAddUserModal()"></button>
+    
+    <button ng-click="back()" class="button icon-left ion-chevron-left button-clear button-dark" ng-click = back()></button>
+    
+  </ion-nav-buttons>-->
+
+
+<ion-header-bar align-title="center">
+          <h1 class="title">Crear Usuario</h1> 
+          <div class="buttons">
+            <button class="button button-icon icon ion-plus" ng-click="vm.showAddUserModal()"></button>
+          </div>
+          <div>
+           <button ng-click="back()" class=" button-clear button-dark" ng-click = hideModal()><i class="icon ion-ios-skipbackward"></i></button>
+         </div>
+          <!--<button ng-hide="isAdd" ng-click="saveUser()" class="button button-icon icon ion-ios-skipbackward"></button>
+          </div>-->
+</ion-header-bar>
+
+  <ion-content>  
+     <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="b in vm.users" type="item-text-wrap" ng-click="vm.showEditUserModal(b)">
+        <img ng-src="{{b.profile}}">
+        <h2>{{b.Name}} {{b.Apellido}}</h2>
+        <br>
+        <!--<h2>{{b.Apellido}}  </h2>-->
+        <b>Telefono: {{b.Telefono}}</b>
+
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+

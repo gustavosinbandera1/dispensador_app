@@ -1,0 +1,25 @@
+<ion-view view-title="Sign-In" name="login-view" hide-nav-bar="true">
+	<ion-content class="login">
+	    <div class="hero no-header flat padding">
+            <div class="content">
+            	<br><br>
+                <div class="app-icon"></div>
+                <h1 class="titleDash">IngEl</h1>
+            </div>
+        </div>
+    
+     
+	<div class="list centre" >
+		<input style="color: #FFFFFF;" type="text"  placeholder="username" ng-model="data.username">
+	  	<br>
+		<input style="color: #FFFFFF;" type="password" placeholder="password" ng-model="data.password">
+	</div>
+	<div class="row">
+		<div class="col text-center">
+			<button class="button button-positive icon-left ion-person button-large " ng-click="login(data)">Login
+			</button>
+		</div>
+	</div>	
+
+	</ion-content>
+<!--</ion-view>-->

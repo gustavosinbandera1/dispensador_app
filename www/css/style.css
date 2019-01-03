@@ -1,0 +1,417 @@
+/* Empty. Add your own CSS if you like */
+
+
+.login {
+    background: url('../img/login1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+.dash {
+    background: url('../img/dash.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+
+.app-icon {
+    background-color: #fff;
+    background: url('../img/logo.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 36px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color:red;
+    color:#888;
+    text-decoration:none;
+    padding: 1px;
+    text-shadow: 1px 1px 1px #1b25d4, 5px 5px 1px rgba(150,150,150,0.3);
+
+}
+
+label{
+  font-weight: 900;
+}
+
+.dashTitle{
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration:none;
+    padding: 1px;
+    text-shadow: 10px 10px 10px #0514e6, 5px 5px 1px rgba(150,150,150,0.9);
+
+ 
+}
+.transparent-input
+{
+  margin: 3px;
+  background-color: #ffffff;
+  border: 2px solid red;
+  opacity: 0.3;
+  font-size: 4px;
+  font-family: "Times New Roman", Times, serif;
+  color:red;
+
+  background-color: lightblue;
+  color: white;
+  background-position: 10px 10px; 
+  border-color: transparent;
+
+
+
+}
+
+
+
+input {
+ font-weight: 900;
+    background-color: #000;
+    font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+  font-size: 12px;   /* if that’s what you want... */
+  line-height: 1.4;  /* somewhat excessive */
+  color: #333333;    /* if that’s what you want, but it reduces legibility */
+  background: red; /* always set background when you set color */
+  } 
+
+ body {
+ font-weight: 900;
+    background-color: #000;
+    font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+  font-size: 12px;   /* if that’s what you want... */
+  line-height: 0.4;  /* somewhat excessive */
+  color: #333333;    /* if that’s what you want, but it reduces legibility */
+  /*background: url('../img/header.jpg') center;*/
+  }  
+.transparent
+{
+  /*background-color: #aaa;*/
+  box-shadow: 0px 5px 5px #151515;
+  /*color: #fff;*/
+}
+div.transbox {
+  margin: 1px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.3;
+  
+}
+div.transbox p {
+  margin: 15%;
+  font-weight: bold;
+  color: #000000;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);/*color cambio de precio*/
+}
+
+div.centre
+{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.bar.bar-header {
+  margin-top:0px;
+  /*background: rgba(49, 21, 192, 0.1);*/
+ background: url('../img/header.jpg') center;
+  border-bottom-width:6;
+  border-bottom-color: rgba(27, 191, 1, 0.94);
+}
+
+.bar.bar-header h1 {
+  /*color: red !important;*/
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 10px 10px 10px #aa14e6, 5px 5px 1px rgba(150,150,150,0.9);
+text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+  /*background-color: #3a50d9;*/
+  color: #fff;
+  font: italic bold 100px Georgia, Serif;/*no se muestra en ios*/
+  text-shadow: -4px 3px 0 #202020, -4px 2px 0 #0a0e27;
+}
+ /*
+.scroll-content {
+  overflow: visible !important;
+}*/
+ /*
+.platform-ios.platform-cordova:not(.fullscreen) .has-header {
+  top:0px;
+}
+
+.bar.bar-light {
+  background-color: rgba(255,255,255,0.0);
+}
+*/
+.fondo{
+    background-color: rgba(0,0,0,0.0);
+}
+
+.config{
+    background: url('../img/config.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+.precio{
+    background: url('../img/precio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:none;
+    background-color: #066E33;
+    /*background-position: center;*/
+    background-color: #ff8080;
+}
+.push_button{
+    position:relative;
+    width:200px;
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    margin:10 auto;
+    border-radius: 5%;
+    /*border-radius:2px;*/
+    border:solid 2px #D94E3B;
+   /* background:#cb3b27;*/
+    text-align:center;
+    padding:15px 10px;
+    opacity: 0.6;
+    display: inline-block;
+    font-size: 25px;
+    background: url('../img/boton2.jpg');
+
+    
+    -webkit-transition: all 0.08s;
+    -moz-transition: all 0.08s;
+    transition: all 0.08s;
+    
+    -webkit-box-shadow: 6px 6px 0px #121112;
+        -moz-box-shadow: 6px 6px 0px #121112;
+        box-shadow: 6px 6px 0px #121112;
+}
+
+.push_button:active{
+    -webkit-box-shadow: 0px 5px 0px #521252;
+    -moz-box-shadow: 0px 5px 0px #521252;
+    box-shadow: 0px 5px 0px #521252;
+    position:relative;
+    top:9px;
+    background: url('../img/boton1.jpg');
+}
+
+
+.push_button1{
+    position:relative;
+    width:200px;
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    margin:10 auto;
+    border-radius: 5%;
+    /*border-radius:2px;*/
+    border:solid 2px #D94E3B;
+   /* background:#cb3b27;*/
+    text-align:center;
+    padding:15px 10px;
+    opacity: 0.9;
+    display: inline-block;
+    font-size: 25px;
+    background: url('../img/on.jpg');
+
+    
+    -webkit-transition: all 0.08s;
+    -moz-transition: all 0.08s;
+    transition: all 0.08s;
+    
+    -webkit-box-shadow: 6px 6px 0px #121112;
+        -moz-box-shadow: 6px 6px 0px #121112;
+        box-shadow: 6px 6px 0px #121112;
+}
+
+.push_button1:active{
+    -webkit-box-shadow: 0px 5px 0px #521252;
+    -moz-box-shadow: 0px 5px 0px #521252;
+    box-shadow: 0px 5px 0px #521252;
+    position:relative;
+    top:9px;
+    background: url('../img/on.jpg');
+}
+/*
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}*/
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #F07575; /* fallback color if gradients are not supported */
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Fx (3.6 to 15) */
+    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of IE 10*/
+    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */ 
+    background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icon {
+   font-size: 30px;
+   color: orange;
+}
+
+#mylabel {
+    float: left;
+    color:orange;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px; 
+    font-weight: 900;
+
+     padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 130px;
+}
+span {
+    display: block;
+
+    /*overflow: hidden;*/
+    
+}
+input {
+    width: 100%
+}
+
+#boton{
+  position:relative;
+    width:200px;
+    display:block;
+    margin:10 auto;
+    border-radius: 5%;
+    text-align:center;
+    padding:1px 10px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  /*background: #eee; 
+  background: lightblue;*/
+
+}
+tr{
+  /*background:PeachPuff; */
+  background:#00CCFF;
+}
+th { 
+  background: #666; 
+  background: #996600;
+  color: white;
+  font-weight: 900; 
+
+}
+td, th { 
+  padding: 8px; 
+  border: 3px solid #ccc; 
+  text-align: center; 
+  font-weight: 900; 
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px; 
+  /*border-color: white;*/
+  border-color: #AAFCff;
+
+  /*color:red;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tabs-custom > .tabs,
+.tabs.tabs-custom {
+  border-color: #5D3A23;
+  background-color: #5D3A23;
+  background-image: linear-gradient(0deg, #0c60ee, #0c60ee 50%, transparent 50%);
+  color: #fff; }
+  .tabs-custom > .tabs .tab-item .badge,
+  .tabs.tabs-custom .tab-item .badge {
+    background-color: #fff;
+    color: #387ef5; }
+
+.tabs-striped.tabs-custom .tabs {
+  background-color: #17178B; /*fondo del menu*/
+  background-color:  rgba(9, 55, 204, 1);
+}
+
+.tabs-striped.tabs-custom .tab-item {
+  color: rgba(25, 255, 25, 1);
+  opacity: 1; }
+  .tabs-striped.tabs-custom .tab-item .badge {
+    opacity: 0.4; }
+  .tabs-striped.tabs-custom .tab-item.tab-item-active, .tabs-striped.tabs-custom .tab-item.active, .tabs-striped.tabs-positive .tab-item.activated {
+    margin-top: -2px;
+    color: #FFF;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    border-color: red; }

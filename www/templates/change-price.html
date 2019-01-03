@@ -1,0 +1,60 @@
+<!--<ion-view view-title="Cambiar Precio" name="price-view" class="precio">-->
+	<!--<ion-nav-buttons side="right">
+		<button class="button icon-left ion-log-out button-stable" ng-click="back()">Back</button>
+	</ion-nav-buttons>-->
+
+
+<ion-header-bar align-title="center">
+          <h1 class="title">Cambiar Precio</h1> 
+          <div></div>
+          <div class="buttons">
+             <button ng-click="back()" class=" button-clear button-dark" ng-click = hideModal()><i class="icon ion-ios-skipbackward"></i></button>
+          </div>
+         
+</ion-header-bar>
+
+	<ion-content class="precio">
+		<!--<div class="row">
+		<div class="col text-center">
+  		<div class="list centre">-->
+  			
+			    <!--<span class="input-label" style="color:red; font-family: Times New Roman, Times, serif; font-size: 26px; font-weight: 900;">Poducto_1-->
+			    <br><br>
+			    <div>
+			    	<h1>Precio 1</h1>
+				    <label for="precio1" id="mylabel"></label>
+					<input name="precio1" type="tel" placeholder="$" ng-model="vm.config.price1" class="transparent" style="font-size:24px; color:yellow; font-weight: 900; width: 90px;" maxlength="5">
+					
+				</div>
+			    	<!--</span>-->
+				<br><br><br><br><br><br><br><br>
+				<div>
+	         		<h1>Precio 2</h1>
+	         		<label for="precio2" id="mylabel"></label>
+					<input name="precio2" type="tel" placeholder="$" ng-model="vm.config.price2" class="transparent" style="font-size:24px; color:yellow; font-weight: 900; width: 90px;" maxlength="5">
+					
+				</div>
+
+			<!--
+			     <span class="input-label" style="color:red; font-family: Times New Roman, Times, serif; font-size: 26px; font-weight: 900;">Poducto_2
+			    <input type="tel" placeholder="$" ng-model="vm.config.price2" class="transparent" style="font-size:24px; color:yellow; font-weight: 900; width: 90px;" maxlength="5"></span>-->
+			
+	<!--		</div>
+	</div>	 	  
+
+	</div>	-->
+	<div class="row">
+		<div class="col text-center">
+  		<!--<div class="list centre">-->
+			
+			<button id="boton" class="button icon-left ion-social-usd button-block button-positive" ng-click="HTTP_ChangePrice()" ng-disabled="vm.configIsBusy">Enviar</button>
+
+			</div>	 	  
+
+	</div>
+
+	</ion-content>
+</ion-view>
+
+
+ 

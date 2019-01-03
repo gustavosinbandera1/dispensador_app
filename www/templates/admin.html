@@ -1,0 +1,48 @@
+<!--<ion-view view-title="Configuracion" name="configuracion-view" class="padding dash" >-->
+	<!--<ion-nav-buttons side="right">
+		<button class="button icon-left ion-log-out button-stable" ng-click="back()">Logout</button>
+	</ion-nav-buttons>-->
+	<ion-header-bar align-title="center; margin-top: 0px;">
+          <h1 class="title">Configuracion</h1> 
+          <div class="buttons">
+          <!--<button class="button icon-left ion-log-out button-stable" ng-click="logout()">Back</button>-->
+          </div>
+</ion-header-bar>
+</br></br></br></br></br></br>
+
+
+	<ion-content class="dash">
+		<div class="row"><div class="col text-center">
+			<div class="padding"></div>
+			<h3 class="dashTitle">Configuracion</h3>
+			<br>
+			<!--<button class="button button-full button-positive push_button1" ng-click="birthday()">
+				 Cumpleaños
+			</button>-->
+			<button class="button button-full button-energized push_button" ng-click="user()">
+				 Usuarios
+			</button>
+			<button class="button button-full button-assertive push_button" ng-click="changePrice()">
+				Cambiar Precio
+			</button>
+
+			<button class="button button-full button-assertive push_button" ng-click="configDispenser()">
+				Configuracion
+			</button>
+
+			<button class="button button-full button-assertive push_button" ng-click="configStation()">
+				Datos Estacion
+			</button>
+
+			<button class="button button-full button-assertive push_button" ng-click="getLastSale()">
+				Ultima Venta
+			</button>
+
+			 <button class="push_button button-full" onclick="KioskPlugin.exitKiosk();">Cerrar App</button>
+            <br />
+            <br />
+            <button class="push_button button-full" onclick="KioskPlugin.isInKiosk(function(x){ if(x) alert('in kiosk'); else alert('not in kiosk'); });">Test full mode </button>
+      
+			
+	</ion-content>
+<!--</ion-view>-->

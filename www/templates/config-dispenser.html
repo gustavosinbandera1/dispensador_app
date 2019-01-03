@@ -1,0 +1,59 @@
+
+<!--<ion-view view-title="Configurar Dispensador" name="config-view" class="config">-->
+	<!--<ion-nav-buttons side="right">
+		<button class="button icon-left ion-log-out button-stable" ng-click="back()">Back</button>
+	</ion-nav-buttons>-->
+
+	<ion-header-bar align-title="center">
+          <h1 class="title">Configuracion</h1> 
+          <div></div>
+          <div class="buttons">
+             <button ng-click="back()" class=" button-clear button-dark" ng-click = back()><i class="icon ion-ios-skipbackward"></i></button>
+          </div>
+         
+</ion-header-bar>
+
+	<ion-content class="padding">
+		
+  		<div class="list">
+			
+			 <ion-spinner class="spinner-energized"></ion-spinner>
+
+			 <label class="item item-input item-select">
+			    <div class="input-label">
+			      Numero de Fuelings
+			    </div>
+			    <select ng-model="vm.config.numFueling">
+			      <option value="1">1</option>
+			      <option value="2" selected>2</option>
+			      <option value="4">4</option>
+			    </select>
+			  </label>	
+
+			   <label class="item item-input item-select">
+			    <div class="input-label">
+			      Numero de Host
+			    </div>
+			    <select ng-model="vm.config.numHost">
+			      <option value="1">1</option>
+			      <option value="2" selected>2</option>
+			    </select>
+			  </label>	
+
+			   <label class="item item-input item-select">
+			    <div class="input-label">
+			      Tecnologia lcd
+			    </div>
+			    <select ng-model="vm.config.displayTechnology">
+			      <option value='6'>6-6-4</option>
+			      <option value='7' selected>7-7-5</option>
+			    </select>
+			  </label>	
+			 	  
+		</div>
+			
+			<button class="button icon-left ion-android-checkmark-circle button-block button-positive" ng-click="HTTP_ConfigDispenser()" ng-disabled="vm.configIsBusy">Enviar</button>
+			
+
+	</ion-content>
+</ion-view>
